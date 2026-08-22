@@ -42,7 +42,6 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Alt}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: END, h: num}
-  - {t: '$$mdi:transfer$$', type: trans}
   mouse:
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+1
@@ -85,7 +84,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: num, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
   num:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -128,7 +126,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
   Alt:
   - {t: 'Alt+$$mdi:keyboard-tab$$', h: 'Alt+$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -171,9 +168,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   '4':
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
