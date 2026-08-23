@@ -37,9 +37,9 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: Layer 1, h: toggle}
+  - Layer 1
   - {t: '$$mdi:keyboard-space$$', h: Layer 2}
-  - {t: Layer 3, h: toggle}
+  - Layer 3
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: toggle}
   Layer 1:
@@ -79,7 +79,7 @@ layers:
   - '&mkp MB2'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
@@ -165,6 +165,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
