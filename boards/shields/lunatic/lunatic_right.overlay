@@ -80,7 +80,7 @@
 
         /*   optional features   */
         snipe-layers = <3>;
-        scroll-layers = <4>;
+        scroll-layers = <1>;
         /* automouse-layer = <3>; */
     };
 };

@@ -17,10 +17,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define Main 0
-#define Num 1
-#define Mouse 2
-#define Opt1 3
-#define Opt2 4
+#define Layer1 1
+#define Layer2 2
+#define Layer3 3
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 900   // mousescroll SPEED
 
@@ -63,14 +62,14 @@
 
 &msc_input_listener {
     speed_up {
-        layers = <Mouse>;
+        layers = <Layer1>;
         input-processors = <&zip_wheel_scaler 3 1>; //scroll faster x3
     };
 };
 
 &trackball_listener {
     scroller {
-        layers = <Mouse>;
+        layers = <Layer1>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_to_scroll_mapper>;
@@ -92,7 +91,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SCROLLBALL";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&tog 2>;
+            bindings = <&kp LEFT_SHIFT>, <&tog Layer1>;
         };
 
         Scroll_U_D: Scroll_U_D {
@@ -140,48 +139,40 @@
             sensor-bindings = <&Scroll_D_U>, <&Scroll_D_U>;
         };
 
-        Mouse {
-            display-name = "mouse";
+        Layer1 {
+            display-name = "Layer 1";
             bindings = <
-&trans  &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &kp LG(NUMBER_4)      &kp LG(NUMBER_5)                        &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &trans  &trans
-&trans  &kp LC(LS(NUMBER_1))  &kp LC(LS(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LC(LS(NUMBER_4))  &kp LC(LS(NUMBER_5))                    &kp LEFT_ARROW    &kp DOWN_ARROW    &kp UP            &kp RIGHT         &trans  &trans
-&trans  &kp LC(LS(NUMBER_6))  &kp LC(LS(NUMBER_7))  &kp LC(LS(NUMBER_8))  &kp LC(LS(NUMBER_9))  &kp LC(LS(NUMBER_0))                    &trans            &mkp MB1          &mkp MCLK         &mkp MB2          &trans  &trans
-                                                                          &trans                &trans                &trans  &kp HOME  &kp END
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                  &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &trans
+&trans  &trans             &trans             &trans             &trans             &trans                           &kp LEFT_ARROW    &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT_ARROW   &trans             &trans
+&trans  &trans             &trans             &trans             &trans             &trans                           &mkp MB1          &mkp MCLK         &mkp MB2          &trans            &trans             &trans
+                                                                                      &to Main  &trans  &trans  &kp HOME  &kp END
             >;
 
             sensor-bindings = <&Scroll_D_U>, <&Scroll_D_U>;
         };
 
-        Num {
-            display-name = "num";
+        Layer2 {
+            display-name = "Layer 2";
+            bindings = <
+&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                  &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(NUMBER_0)      &trans
+&trans  &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))              &kp LC(LA(NUMBER_6))  &kp LC(LA(NUMBER_7))  &kp LC(LA(NUMBER_8))  &kp LC(LA(NUMBER_9))  &kp LC(LA(NUMBER_0))  &trans
+&trans  &kp LC(LS(NUMBER_1))  &kp LC(LS(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LC(LS(NUMBER_4))  &kp LC(LS(NUMBER_5))              &kp LC(LS(NUMBER_6))  &kp LC(LS(NUMBER_7))  &kp LC(LS(NUMBER_8))  &kp LC(LS(NUMBER_9))  &kp LC(LS(NUMBER_0))  &trans
+                                                                                          &trans  &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
+        };
+
+        Layer3 {
+            display-name = "Layer 3";
             bindings = <
 &trans          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &trans
 &trans          &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                  &kp MINUS         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS           &trans
 &kp LEFT_SHIFT  &kp F11  &kp F12  &trans  &trans  &trans                   &trans            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0       &trans
-                                          &trans  &trans   &trans  &trans  &trans
+                                          &trans  &trans   &to Main  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
-        };
-
-        Alt {
-            bindings = <
-&mt LA(TAB) LA(TAB)  &trans            &trans            &trans            &trans            &trans                            &trans                &trans                &trans                &trans                &trans                &trans
-&trans               &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(NUMBER_5)                  &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))  &trans
-&trans               &kp LA(NUMBER_6)  &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp LA(NUMBER_0)                  &kp LC(LA(NUMBER_6))  &kp LC(LA(NUMBER_7))  &kp LC(LA(NUMBER_8))  &kp LC(LA(NUMBER_9))  &kp LC(LA(NUMBER_0))  &trans
-                                                                           &trans            &trans            &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
-        };
-
-        Opt2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
