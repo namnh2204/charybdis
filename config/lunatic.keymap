@@ -91,7 +91,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SCROLLBALL";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&tog Layer1>;
+            bindings = <&kp LEFT_SHIFT>, <&tog 1>;
         };
 
         Scroll_U_D: Scroll_U_D {
@@ -143,7 +143,7 @@
             display-name = "Layer 1";
             bindings = <
 &trans          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp BACKSLASH
-&trans          &trans            &trans            &kp DELETE        &trans            &trans                              &kp LEFT_ARROW    &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT_ARROW   &trans            &trans
+&kp LCTRL       &trans            &kp PRINTSCREEN   &kp DELETE        &trans            &trans                              &kp LEFT_ARROW    &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT_ARROW   &trans            &trans
 &kp LEFT_SHIFT  &trans            &trans            &trans            &trans            &trans                              &trans            &mkp MB1          &mkp MCLK         &mkp MB2          &trans            &trans
                                                                       &trans            &trans            &trans  &kp HOME  &kp END
             >;
@@ -155,7 +155,7 @@
             display-name = "Layer 2";
             bindings = <
 &kp TILDE       &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(NUMBER_0)      &trans
-&trans          &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))                  &kp LC(LA(NUMBER_6))  &kp LC(LA(NUMBER_7))  &kp LC(LA(NUMBER_8))  &kp LC(LA(NUMBER_9))  &kp LC(LA(NUMBER_0))  &trans
+&kp LCTRL       &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))                  &kp LC(LA(NUMBER_6))  &kp LC(LA(NUMBER_7))  &kp LC(LA(NUMBER_8))  &kp LC(LA(NUMBER_9))  &kp LC(LA(NUMBER_0))  &trans
 &kp LEFT_SHIFT  &kp LC(LS(NUMBER_1))  &kp LC(LS(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LC(LS(NUMBER_4))  &kp LC(LS(NUMBER_5))                  &kp LC(LS(NUMBER_6))  &kp LC(LS(NUMBER_7))  &kp LC(LS(NUMBER_8))  &kp LC(LS(NUMBER_9))  &kp LC(LS(NUMBER_0))  &trans
                                                                                   &trans                &trans                &trans  &trans  &trans
             >;
@@ -167,7 +167,7 @@
             display-name = "Layer 3";
             bindings = <
 &trans          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans          &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                  &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans
+&kp LCTRL       &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                  &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans
 &kp LEFT_SHIFT  &kp F11  &kp F12  &trans  &trans  &trans                   &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0      &trans
                                           &trans  &trans   &trans  &trans  &trans
             >;
