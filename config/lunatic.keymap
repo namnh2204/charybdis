@@ -165,10 +165,10 @@
         Layer3 {
             display-name = "Layer 3";
             bindings = <
-&trans          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LCTRL       &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                  &kp EQUAL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans            &trans
-&kp LEFT_SHIFT  &kp F11  &kp F12  &trans  &trans  &trans                   &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0      &trans
-                                          &to 0   &trans   &trans  &trans  &trans
+&trans          &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_BRACKET                    &kp RIGHT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0  &trans
+&kp LCTRL       &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACE                      &kp RIGHT_BRACE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&kp LEFT_SHIFT  &kp F9  &kp F10  &kp F11  &kp F12  &kp UNDERSCORE                      &kp EQUAL          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                                          &trans   &kp MINUS         &kp PLUS  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
