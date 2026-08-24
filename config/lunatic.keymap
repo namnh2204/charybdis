@@ -154,7 +154,7 @@
             display-name = "Layer 2";
             bindings = <
 &kp TILDE       &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(NUMBER_5)                      &kp LA(NUMBER_6)      &kp LA(NUMBER_7)      &kp LA(NUMBER_8)      &kp LA(NUMBER_9)      &kp LA(NUMBER_0)      &trans
-&kp LCTRL       &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))                  &kp LC(LA(NUMBER_6))  &kp LC(LA(NUMBER_7))  &kp LC(LA(NUMBER_8))  &kp LC(LA(NUMBER_9))  &kp LC(LA(NUMBER_0))  &trans
+&kp LCTRL       &kp LS(LA(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(NUMBER_5))                  &kp LA(LS(NUMBER_6))  &kp LA(LS(NUMBER_7))  &kp LA(LS(NUMBER_8))  &kp LA(LS(NUMBER_9))  &kp LA(LS(NUMBER_0))  &trans
 &kp LEFT_SHIFT  &kp LC(LS(NUMBER_1))  &kp LC(LS(NUMBER_2))  &kp LC(LS(NUMBER_3))  &kp LC(LS(NUMBER_4))  &kp LC(LS(NUMBER_5))                  &kp LC(LS(NUMBER_6))  &kp LC(LS(NUMBER_7))  &kp LC(LS(NUMBER_8))  &kp LC(LS(NUMBER_9))  &kp LC(LS(NUMBER_0))  &trans
                                                                                   &to 0                 &trans                &trans  &trans  &trans
             >;
