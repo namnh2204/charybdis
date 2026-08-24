@@ -142,7 +142,7 @@
         Layer1 {
             display-name = "Layer 1";
             bindings = <
-&trans          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp BACKSLASH
+&kp GRAVE       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &kp BACKSLASH
 &kp LCTRL       &trans            &kp PRINTSCREEN   &kp DELETE        &trans            &trans                              &kp LEFT_ARROW    &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT_ARROW   &trans            &trans
 &kp LEFT_SHIFT  &trans            &trans            &trans            &trans            &trans                              &trans            &mkp MB1          &mkp MCLK         &mkp MB2          &trans            &trans
                                                                       &trans            &trans            &trans  &kp HOME  &kp END
