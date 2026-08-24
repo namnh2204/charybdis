@@ -43,7 +43,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', h: toggle}
   Layer 1:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - Gui+1
   - Gui+2
   - Gui+3
