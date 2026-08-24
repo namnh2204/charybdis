@@ -98,16 +98,16 @@ layers:
   - Alt+0
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - Ctl+Alt+1
-  - Ctl+Alt+2
-  - Ctl+Alt+3
-  - Ctl+Alt+4
-  - Ctl+Alt+5
-  - Ctl+Alt+6
-  - Ctl+Alt+7
-  - Ctl+Alt+8
-  - Ctl+Alt+9
-  - Ctl+Alt+0
+  - Sft+Alt+1
+  - Alt+Sft+2
+  - Alt+Sft+3
+  - Alt+Sft+4
+  - Alt+Sft+5
+  - Alt+Sft+6
+  - Alt+Sft+7
+  - Alt+Sft+8
+  - Alt+Sft+9
+  - Alt+Sft+0
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - Ctl+Sft+1
