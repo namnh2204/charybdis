@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Layer 2}
   - Layer 3
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', h: toggle}
+  - {t: '$$mdi:keyboard-return$$', h: LEFT WIN}
   Layer 1:
   - {t: '`', s: '~'}
   - Gui+1
