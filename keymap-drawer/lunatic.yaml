@@ -79,8 +79,8 @@ layers:
   - '&mkp MB2'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:bluetooth-off$$', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - END
