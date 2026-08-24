@@ -39,9 +39,9 @@ layers:
   - $$mdi:keyboard-esc$$
   - Layer 1
   - {t: '$$mdi:keyboard-space$$', h: Layer 2}
-  - Layer 3
+  - {t: '$$mdi:keyboard-return$$', h: Layer 3}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', h: LEFT WIN}
+  - LEFT WIN
   Layer 1:
   - {t: '`', s: '~'}
   - Gui+1
